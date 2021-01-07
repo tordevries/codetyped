@@ -43,7 +43,7 @@ $filemenu = buildFileMenu( matchSequence( findAllFiles() ) );
 
 Depending on the code, you may have to scroll vertically or horizontally to see the entire text.
 
-The timer (below) will start when you begin typing. As you type, accuracy stats will be shown below. Once you have retyped all of the code shown with 100% accuracy, the text box will be locked and your character per second (CPS) stat will be shown.
+The timer (below) will start when you begin typing. As you type, accuracy stats will be shown below. Once you have retyped all of the code shown with 100% accuracy, the text box will be locked and your words per minute (WPM) stat will be shown.
 
 Codetyped v0.1 by Tor de Vries (tor.devries@wsu.edu)."></textarea>
 

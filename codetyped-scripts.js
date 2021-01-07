@@ -139,7 +139,7 @@ function compareTyping() {
 			wordCount = splitOrigText.length;
 			wpm = (wordCount / totalSeconds) * 60;
 			
-			document.getElementById("clock").innerHTML += " / " + cps + " CPS" + " / " + wpm + " WPM";
+			document.getElementById("clock").innerHTML += " / " + wpm + " WPM"; // removed cps: + cps + " CPS" + " / "
 			document.getElementById("stats").classList.add("doneRed");
 			document.getElementById("typeCode").setAttribute("disabled", true);
 			done = true;
