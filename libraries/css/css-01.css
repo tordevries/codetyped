@@ -1,0 +1,16 @@
+* {
+	font-family: monospace;
+}
+
+pre {
+	tab-size: 2;
+}
+
+textarea {
+	tab-size: 2;
+}
+
+#origCode {
+	border: none;
+	background-color: #fff;
+}

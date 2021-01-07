@@ -1,0 +1,164 @@
+* {
+	font-family: 'Source Code Pro', monospace;
+	tab-size: 2;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #ddd;
+}
+
+pre, textarea {
+	tab-size: 2;
+	padding: 1ch;
+	margin: 0;
+	border-radius: 5px;
+	font-size: 1rem;
+	white-space: pre;
+}
+
+textarea {
+	white-space: pre-wrap;
+}
+
+textarea:focus {
+    outline: none !important;
+}
+
+.codeWrap {
+	white-space: pre;
+}
+
+#origCode {
+	position: relative;
+	width: 45vw;
+	height: calc(90vh - 45px);
+	margin: 2vh 0 0 1.5vw;
+	float: left;
+	overflow: scroll;
+	background-color: #eee;
+	z-index: 1;
+	border-radius: 5px;
+}
+
+#newCode {
+	position: relative;
+	width: 49.5vw;
+	height: calc(95vh - 45px);
+	margin: 2vh 1.5vw 0 0;
+	padding: 0;
+	float: right;
+	z-index: 1;
+}
+
+#origCode, #newCode textarea {
+	background-size: 2ch 2ch;
+	background-image: linear-gradient(to right, #eee 1px, transparent 1px);
+	background-attachment: local;
+	background-position: 1ch 0;	
+}
+
+#origCode {
+	background-image: linear-gradient(to right, #ddd 1px, transparent 1px);
+}
+
+#newCode textarea {
+	border: none;
+	width: 49.5vw;
+	height: calc(90vh - 45px);
+	background-color: #fff;
+	resize: none;
+	overflow: scroll;
+	z-index: 1;
+}
+
+#statPercentages {
+	float: right;
+}
+
+.stat {
+	display: inline-block;
+	width: 5ch;
+}
+
+.doneRed {
+	color: red;
+}
+
+
+
+/* for nav menu */
+
+#nav {
+  background-color: #a9ab57;
+  overflow: auto;
+  width: 100%;
+	height: 45px;
+	z-index: 10;
+	float: left;
+}
+
+#nav a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: #000000;
+	z-index: 10;
+}
+
+#nav a:hover {
+  background-color: #74753f;
+	color: #fff;
+}
+
+#nav ul ul a {
+  text-transform: none;
+}
+
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+	z-index: 10;
+}
+
+#nav li {
+  float: left;
+  background-color: #a9ab57; /* moved this from the ul{} for submenus */
+	z-index: 10;
+}
+
+#nav li li {
+  clear: left;
+  width: 100%;
+}
+
+#nav ul ul {
+  display: none;
+  position: absolute;
+}
+
+#nav ul li:hover ul {
+  display: block;
+}
+
+#nav ul ul ul { /* for submenus inside main menus inside the master menu */
+  left: 100%; /* or try "margin-left" */
+  white-space: nowrap; /* don't let the menu items word-wrap */
+}
+
+#nav ul ul ul#subnavFAQs {
+  top: 80%; /* note the ID; distance from the top of the parent menu */
+}
+
+#nav ul li:hover ul ul { /* keep submenus hidden even if main menu is visible */
+  display: none;
+}
+
+#nav ul ul li:hover ul { /* display submenu only for the parent list item :hover */
+  display: block;
+}
+

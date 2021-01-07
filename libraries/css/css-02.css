@@ -1,0 +1,55 @@
+/*
+
+This file contains the basic CSS styles for index.php and chat.php.
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	font-family: 'Courier Prime', monospace;
+}
+
+#pageBox {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: #eee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button {
+	font-weight: bold;
+}
+
+input, button, #chatConvo {
+	border-radius: 5px;
+}
+
+#loginBox {
+	position: relative;
+	height: auto;
+	text-align: center;
+}
+
+#chatBox {
+	position: absolute;
+	width: 80vw;
+	height: 100vh;
+}
+
+#chatTitle {
+	height: 5vh;
+	padding-top: 1.5vh;
+}
+
+#chatTitle span#leave {
+	float: right;
+}
+
+
