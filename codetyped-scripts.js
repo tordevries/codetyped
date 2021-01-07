@@ -137,7 +137,7 @@ function compareTyping() {
 			flatOrigText = origText.replace(/\s+/g,' ').trim();
 			splitOrigText = flatOrigText.split(' ');
 			wordCount = splitOrigText.length;
-			wpm = (wordCount / totalSeconds) * 60;
+			wpm = Math.round( (wordCount / totalSeconds) * 600 ) / 10;
 			
 			document.getElementById("clock").innerHTML += " / " + wpm + " WPM"; // removed cps: + cps + " CPS" + " / "
 			document.getElementById("stats").classList.add("doneRed");
