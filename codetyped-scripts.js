@@ -156,7 +156,7 @@ function loadCode(filename) {
 	// provides code to do something in response to the AJAX request
 		ajax.onreadystatechange = function() {
 			if ((this.readyState == 4) && (this.status == 200)) {
-				updateCodeDisplay(this.responseText);
+				updateCodeDisplay(this.responseText, filename);
 			}
 		}
 		
@@ -167,9 +167,11 @@ function loadCode(filename) {
 		ajax.send();
 }
 
-function updateCodeDisplay(newCode) {
+
+function updateCodeDisplay(newCode, newFilename) {
 	stopTimer();
 	totalSeconds = 0;
+	document.querySelector("#origFile").innerHTML = newFilename;
 	document.querySelector("#origCode pre").innerHTML = newCode;
 	document.getElementById("clock").innerHTML = "00:00";
 	document.getElementById("ongoingStat").innerHTML = "0%";

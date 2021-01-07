@@ -1,7 +1,7 @@
 * {
 	font-family: 'Source Code Pro', monospace;
-	-moz-tab-size: 2;
-	tab-size: 2;
+	-moz-tab-size: 3; /* just for firefox?! */
+	tab-size: 3;
 	font-size: 16px;
 	box-sizing: border-box;
 	color: #fff;
@@ -14,7 +14,6 @@ body {
 }
 
 pre, textarea {
-	tab-size: 2;
 	padding: 1ch;
 	margin: 0;
 	border-radius: 5px;
@@ -40,6 +39,7 @@ textarea:focus {
 	height: calc(90vh - 45px);
 	margin: 2vh 0 0 1.5vw;
 	float: left;
+	clear: left;
 	overflow: scroll;
 	background-color: #222;
 	z-index: 1;
@@ -53,11 +53,12 @@ textarea:focus {
 	margin: 2vh 1.5vw 0 0;
 	padding: 0;
 	float: right;
+	clear: right;
 	z-index: 1;
 }
 
 #origCode, #newCode textarea {
-	background-size: 2ch 2ch;
+	background-size: 3ch 3ch;
 	background-image: linear-gradient(to right, #222 1px, transparent 1px);
 	background-attachment: local;
 	background-position: 1ch 0;	
@@ -70,6 +71,12 @@ textarea:focus {
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+#origStats {
+	float: left;
+	clear: left;
+	margin: 4px 0 0 1.5vw;
 }
 
 #newCode textarea {
@@ -85,6 +92,7 @@ textarea:focus {
 
 #statPercentages {
 	float: right;
+	clear: right;
 }
 
 .stat {
