@@ -125,6 +125,12 @@ textarea:focus {
 	z-index: 10;
 }
 
+#nav a#aboutLink {
+	display: inline-block;
+	float: right;
+	clear: right;
+}
+
 #nav a:hover {
   background-color: #74753f;
 	color: #fff;

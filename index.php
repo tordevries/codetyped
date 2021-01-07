@@ -33,6 +33,7 @@ $filemenu = buildFileMenu( matchSequence( findAllFiles() ) );
 			<li><a href="."><b>codetyped</b></a></li>
 			<?= $filemenu; ?>
 		</ul>
+		<a id="aboutLink" href="https://tordevries.github.io/codetyped/">about</a>
 	</div>
 
 	<div id="origCode"><pre>Select code from the menu above.</pre></div>
@@ -44,7 +45,7 @@ Depending on the code, you may have to scroll vertically or horizontally to see 
 
 The timer (below) will start when you begin typing. As you type, accuracy stats will be shown below. Once you have retyped all of the code shown with 100% accuracy, the text box will be locked and your character per second (CPS) stat will be shown.
 
-Codetyped v0.1 by Tor de Vries (tor.devries@wsu.edu). Download the project at https://tordevries.github.io/codetyped/."></textarea>
+Codetyped v0.1 by Tor de Vries (tor.devries@wsu.edu)."></textarea>
 
 		<div id="stats">
 			<b>TIME:</b> <span id="clock">00:00</span>
