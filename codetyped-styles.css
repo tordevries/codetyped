@@ -1,5 +1,6 @@
 * {
 	font-family: 'Source Code Pro', monospace;
+	-moz-tab-size: 2;
 	tab-size: 2;
 	font-size: 16px;
 	box-sizing: border-box;
