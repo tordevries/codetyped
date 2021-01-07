@@ -13,6 +13,7 @@ Near-term goals:
 - Synchronized scrolling between the panels
 
 Long-range ideas:
+- Probably ought to use contentEditable instead of textarea
 - Add user accounts with database support for tracking progress over time
 - Custom sequencing with shareable links for quizzes/challenges
 - Badges and leaderboards for achievements
