@@ -4,7 +4,10 @@
 Codetyped v0.1 
 */
 
+require "libraries/registry.php";
 require "functions.php";
+
+$filemenu = buildFileMenu( matchSequence( findAllFiles() ) );
 
 ?><!DOCTYPE html>
 <html>
@@ -28,7 +31,7 @@ require "functions.php";
 	<div id="nav">
 		<ul>
 			<li><a href="."><b>codetyped</b></a></li>
-			<?= buildFileMenu( findAllFiles() ); ?>
+			<?= $filemenu; ?>
 		</ul>
 	</div>
 
