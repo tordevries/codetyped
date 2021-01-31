@@ -1,10 +1,15 @@
+/*
+
+CSS for Codetyped.
+
+*/
+
 * {
 	font-family: 'Source Code Pro', monospace;
 	-moz-tab-size: 3; /* just for firefox?! */
 	tab-size: 3;
 	font-size: 16px;
 	box-sizing: border-box;
-	color: #fff;
 }
 
 body {
@@ -19,6 +24,7 @@ pre, textarea {
 	border-radius: 5px;
 	font-size: 1rem;
 	white-space: pre;
+	color: #fff;
 }
 
 textarea {
@@ -77,6 +83,7 @@ textarea:focus {
 	float: left;
 	clear: left;
 	margin: 4px 0 0 1.5vw;
+	color: #fff;
 }
 
 #newCode textarea {
@@ -98,10 +105,15 @@ textarea:focus {
 .stat {
 	display: inline-block;
 	width: 5ch;
+	color: #fff;
 }
 
-.doneRed {
-	color: red;
+#stats {
+	color: #fff;
+}
+
+.doneColor span {
+	color: lightblue !important;
 }
 
 

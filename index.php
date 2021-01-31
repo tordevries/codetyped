@@ -1,7 +1,7 @@
 <?
 
 /* 
-Codetyped v0.1 
+Codetyped v0.1.1
 */
 
 require "libraries/registry.php";
@@ -33,7 +33,7 @@ $filemenu = buildFileMenu( matchSequence( findAllFiles() ) );
 			<li><a href="."><b>codetyped</b></a></li>
 			<?= $filemenu; ?>
 		</ul>
-		<a id="aboutLink" href="https://tordevries.github.io/codetyped/">about</a>
+		<a id="aboutLink" href="https://tordevries.github.io/codetyped/">about v0.1.1</a>
 	</div>
 
 	<div id="origCode"><pre>Select code from the menu above.</pre></div>

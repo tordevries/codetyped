@@ -1,6 +1,6 @@
 /*
 
-JavaScript code for Codetyped.
+JavaScript for Codetyped.
 
 */
 
@@ -140,7 +140,7 @@ function compareTyping() {
 			wpm = Math.round( (wordCount / totalSeconds) * 600 ) / 10;
 			
 			document.getElementById("clock").innerHTML += " / " + wpm + " WPM"; // removed cps: + cps + " CPS" + " / "
-			document.getElementById("stats").classList.add("doneRed");
+			document.getElementById("stats").classList.add("doneColor");
 			document.getElementById("typeCode").setAttribute("disabled", true);
 			done = true;
 		}
@@ -178,7 +178,7 @@ function updateCodeDisplay(newCode, newFilename) {
 	document.getElementById("totalStat").innerHTML = "0%";
 	document.getElementById("typeCode").removeAttribute("disabled");
 	document.getElementById("typeCode").value = "";
-	document.getElementById("stats").classList.remove("doneRed");
+	document.getElementById("stats").classList.remove("doneColor");
 	document.getElementById("typeCode").classList.remove("codeWrap");
 	document.getElementById("typeCode").setAttribute("placeholder", placeholderText);
 	done = false;
