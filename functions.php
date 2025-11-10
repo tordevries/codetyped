@@ -23,6 +23,7 @@ function findAllFiles($dir = "libraries") {
 
 // a recursive function to build a hierarchical <ul> menu of files from the array produced in findAllFiles();
 function buildFileMenu($arr = null, $path = "", $depth = 0) {
+	$result = "";
 	if ($depth > 0) $result = "<ul>";
 	if (!is_null($arr)) {
 		foreach($arr as $key => $value) {
