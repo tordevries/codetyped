@@ -1,5 +1,7 @@
 <?
 
+$labels = array();
+
 // a recursive function that returns a multidimensional array of files/folders in local directory; 
 // adapted from user-submitted code on https://www.php.net/manual/en/function.scandir.php
 function findAllFiles($dir = "libraries") { 
@@ -54,7 +56,6 @@ function matchSequence($arr) {
 // return custom menu label, if any, from libraries/registry.php
 function menuLabel($item) {
 	global $labels;
-	var_dump($labels);
 	if ($labels[$item]) return $labels[$item];
 	else return $item;
 }
