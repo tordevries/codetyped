@@ -57,7 +57,6 @@ function matchSequence($arr) {
 // return custom menu label, if any, from libraries/registry.php
 function menuLabel($item) {
 	global $labels;
-	if ($labels[$item]) 
-		return $labels[$item];
+	if ( isSet($labels[$item]) ) return $labels[$item];
 	else return $item;
 }
