@@ -10,7 +10,7 @@ function findAllFiles($dir = "libraries") {
 		if ( !in_array( $value, array(".", "..", "registry.php") ) ) {
 			 if ( is_dir($dir . DIRECTORY_SEPARATOR . $value) ) {
 				 $path = $dir . DIRECTORY_SEPARATOR . $value;
-				 include "$path/registry.php";
+				 if ( file_exists($path/registry.php) ) include "$path/registry.php";
 				 $result[$value] = findAllFiles($path);
 			 } else $result[] = $value;
 		}
